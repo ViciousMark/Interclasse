@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastro de Times</title>
+    <link rel="stylesheet" href="Times.css">
+</head>
+<body>
+    <div class="team-container">
+        <h2>Cadastro de Times</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="nome-time">Nome do Time:</label>
+            <input type="text" id="nome-time" name="nome-time" placeholder="Digite o nome do time" required>
+
+            <label for="responsavel">Nome do Responsável:</label>
+            <input type="text" id="responsavel" name="responsavel" placeholder="Digite o nome do responsável" required>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione a categoria</option>
+                <option value="Sub-13">Sub-13</option>
+                <option value="Sub-15">Sub-15</option>
+                <option value="Sub-17">Sub-17</option>
+                <option value="Adulto">Adulto</option>
+            </select>
+
+            <label for="foto-time">Foto/Logotipo do Time:</label>
+            <input type="file" id="foto-time" name="foto-time" accept="image/*" required>
+
+            <button type="submit">Cadastrar Time</button>
+        </form>
+    </div>
+</body>
+</html>
